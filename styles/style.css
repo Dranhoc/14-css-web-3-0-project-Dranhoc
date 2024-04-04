@@ -1,0 +1,103 @@
+body {
+  background-color: #FFFDFA;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #5E607A;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.header_container {
+  display: flex;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 7vh;
+  justify-content: space-between;
+}
+.header_container .logo {
+  width: 64.09px;
+  height: 39.9px;
+  color: #00001A;
+}
+.header_container nav a {
+  text-decoration: none;
+  color: #5E607A;
+  font-weight: 400;
+  margin-left: 5em;
+  font-size: 15px;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 7vh;
+}
+.main_container .main_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr;
+  grid-template-rows: [row1] 30vh [row2] 22vh;
+  gap: 5vh 2vw;
+  overflow: hidden;
+}
+.main_container .main_grid .bigPicture {
+  grid-column: span 2;
+  overflow: hidden;
+}
+.main_container .main_grid .bigPicture img {
+  width: 100%;
+  height: auto;
+}
+.main_container .main_grid .bigTitle h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 56px;
+  text-align: left;
+}
+.main_container .main_grid .readMore {
+  display: flex;
+  flex-direction: column;
+}
+.main_container .main_grid .readMore .readmoreButton {
+  height: 48px;
+  width: 185px;
+  background-color: #F15D51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.main_container .main_grid .readMore .readmoreButton a {
+  text-decoration: none;
+  color: #FFFDFA;
+  letter-spacing: 0.2em;
+}
+.main_container .main_grid .New {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-row: span 2;
+  background-color: #00001A;
+  color: white;
+  padding: 20px;
+}
+.main_container .main_grid .New h2 {
+  color: #E9AA52;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+.main_container .main_grid .New h3 {
+  color: #FFFDFA;
+}
+.main_container .main_grid .New p {
+  padding: 0px;
+  width: auto;
+}/*# sourceMappingURL=style.css.map */

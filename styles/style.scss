@@ -1,0 +1,117 @@
+body{
+  background-color: #FFFDFA;
+  font-family: "Inter", sans-serif;
+  
+}
+p{
+  color:#5E607A;
+  font-size: 15px;
+  font-weight:400;
+  line-height: 26px;
+}
+
+@mixin flex-container{
+  display:flex;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top:7vh;
+  // width:1110px;
+}
+
+
+.header_container{
+  @include flex-container;
+  justify-content: space-between;
+  
+  .logo{
+    width: 64.09px;
+    height: 39.9px;
+    color: #00001A;
+  }
+
+  nav a{
+    text-decoration: none;
+    color:#5E607A;
+    font-weight: 400;
+    margin-left:5em;
+    font-size: 15px;
+  }
+}
+
+.main_container{
+  @include flex-container;
+
+  .main_grid{
+    width:100%;
+    display:grid;
+    grid-template-columns: [col1]1fr [col2]1fr [col3]1fr;
+    grid-template-rows: [row1]30vh [row2]22vh;
+    gap:5vh 2vw;
+    overflow: hidden;
+    
+
+    .bigPicture{
+      grid-column:span 2;
+      overflow: hidden;
+    
+      img{
+      width:100%;
+      height:auto;
+      }
+    }
+    .bigTitle h1{
+      font-family: "Inter", sans-serif;
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 56px;
+      text-align: left;
+
+    }
+    .readMore{
+      display:flex;
+      flex-direction: column;
+
+      .readmoreButton{
+          height:48px;
+          width:185px;
+          background-color: #F15D51;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: auto;
+
+        a{
+          text-decoration: none;
+          color:#FFFDFA;
+          letter-spacing: 0.2em;
+          
+        }
+      }
+    }
+    .New{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      grid-row:span 2;
+      background-color: #00001A;
+      color: white;
+      padding: 20px ;
+      
+      
+      h2{
+        color:#E9AA52;
+        font-weight:700;
+        font-size: 40px;
+        line-height: 40px;
+      }
+      h3{
+        color:#FFFDFA;
+      }
+      p{
+        padding:0px;
+        width:auto;
+      }
+    }
+  }
+}
