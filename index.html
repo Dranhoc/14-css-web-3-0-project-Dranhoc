@@ -19,13 +19,21 @@
       <div class="logo">
         <img src="/images/W..svg" alt="W. Logo">
       </div>  
-      <nav>
+      <nav class="DesktopNav">
         <a href="#">Home</a>
         <a href="#">New</a>
         <a href="#">Popular</a>
         <a href="#">Trending</a>
         <a href="#">Categories</a>
       </nav>
+      <a href="#" class="MobileNav">
+        <nav class="MobileNav">
+          <hr>
+          <hr>
+          <hr>
+        </nav>
+      </a>
+      
     </div>
   </header>
 
@@ -33,7 +41,8 @@
     <div class="main_container">
       <div class="main_grid">
         <div class="bigPicture">
-          <img src="/images/bigpic.png" alt="">
+          <img class="desktop-image" src="/images/bigpic.jpg" alt="">
+          <img class="mobile-image" src="/images/smallpic.png" alt="">
         </div>
         <article class="New">
           <h2>New</h2>
@@ -68,10 +77,38 @@
   </main>
   
   <section>
-      <div class="grid_container">
-        <div class="grid"></div>
-        <div class="grid"></div>
-        <div class="grid"></div>
+      <div class="grid_articles">
+
+        <article>
+          <div class="article_img">
+            <img src="/images/RetroPC.jpg" alt="Retro PC">
+          </div>
+          <div class="miniArticle">  
+            <p class="Number">01</p>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+        <article>
+          <div class="article_img">
+            <img src="/images/TopLaptop.jpg" alt="Laptop">
+          </div>
+          <div class="miniArticle">  
+            <p class="Number">02</p>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article>
+          <div class="article_img">
+            <img src="/images/Gaming.jpg" alt="Joystick">
+          </div>
+          <div class="miniArticle">  
+            <p class="Number">03</p>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
       </div>
   </section>
 
