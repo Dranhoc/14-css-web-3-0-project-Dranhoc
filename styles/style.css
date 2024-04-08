@@ -31,6 +31,10 @@ p {
   margin-left: 3em;
   font-size: 15px;
 }
+.header_container nav a:hover {
+  color: #2533f3;
+  font-weight: 600;
+}
 
 .main_container {
   display: flex;
